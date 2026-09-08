@@ -1,37 +1,143 @@
 <!doctype html>
-<html lang="pt-br">
+<html lang="pt-BR" data-theme="dark">
 
 <head>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <meta name="description" content="Portfólio de Dutra: ideias, aprendizados e projetos de desenvolvimento web.">
+    <meta name="theme-color" content="#10131a">
     <link rel="stylesheet" href="css/style.css">
-
-    <title>Cabeça Girando </title>
-   
+    <title>My Head | Dutra</title>
 </head>
 
 <body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
 
+    <header class="site-header">
+        <nav class="container navbar" aria-label="Navegação principal">
+            <a class="brand" href="#inicio" aria-label="My Head - início">
+                My<span>Head</span><i>.</i>
+            </a>
 
-    <div class="h-100 d-flex align-items-center justify-content-center">
-        <a href="./readme.html">
-            <img id="img" src="img/cabeca.jpg">
-        </a>
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span class="sr-only">Abrir menu</span>
+            </button>
 
-    </div>
+            <ul class="nav-links" id="main-menu">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#jornada">Jornada</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <main id="conteudo">
+        <section class="hero" id="inicio">
+            <div class="container hero-grid">
+                <div class="hero-copy reveal">
+                    <p class="eyebrow"><span></span> Desenvolvimento web em movimento</p>
+                    <h1>Ideias na cabeça.<br><em>Projetos no mundo.</em></h1>
+                    <p class="hero-text">
+                        Olá, eu sou o <strong>Dutra</strong>. Este é o meu espaço para transformar curiosidade em código,
+                        aprender fazendo e compartilhar cada nova evolução.
+                    </p>
+                    <div class="hero-actions">
+                        <a class="button button-primary" href="#sobre">Conheça meu trabalho <span aria-hidden="true">↘</span></a>
+                        <a class="button button-ghost" href="#jornada">Minha jornada</a>
+                    </div>
+                    <dl class="quick-stats" aria-label="Resumo do portfólio">
+                        <div><dt>3</dt><dd>Tecnologias</dd></div>
+                        <div><dt>∞</dt><dd>Ideias</dd></div>
+                        <div><dt>1%</dt><dd>Melhor todo dia</dd></div>
+                    </dl>
+                </div>
 
+                <div class="hero-visual reveal" aria-label="Composição visual animada">
+                    <div class="orbit orbit-one"></div>
+                    <div class="orbit orbit-two"></div>
+                    <div class="visual-card">
+                        <p class="card-label">mentalidade.dev</p>
+                        <img id="spinning-head" src="img/cabeca.jpg" alt="Ilustração abstrata em rotação">
+                        <button class="spin-toggle" type="button" aria-pressed="false">
+                            <span class="pause-icon" aria-hidden="true">Ⅱ</span>
+                            <span class="spin-label">Pausar rotação</span>
+                        </button>
+                    </div>
+                    <span class="tech-chip chip-html">HTML</span>
+                    <span class="tech-chip chip-css">CSS</span>
+                    <span class="tech-chip chip-git">Git</span>
+                </div>
+            </div>
+        </section>
 
+        <section class="about section" id="sobre">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <p class="section-number">01 / Sobre</p>
+                    <h2>Aprender, testar,<br><em>evoluir.</em></h2>
+                    <p>Minha cabeça nunca para. Cada projeto é uma oportunidade de entender algo novo e construir melhor.</p>
+                </div>
 
+                <div class="skills-grid">
+                    <article class="skill-card reveal">
+                        <span class="card-number">01</span>
+                        <div class="skill-icon" aria-hidden="true">&lt;/&gt;</div>
+                        <h3>HTML5</h3>
+                        <p>Estruturas semânticas, acessíveis e preparadas para qualquer tela.</p>
+                    </article>
+                    <article class="skill-card reveal">
+                        <span class="card-number">02</span>
+                        <div class="skill-icon" aria-hidden="true">✦</div>
+                        <h3>CSS3</h3>
+                        <p>Interfaces responsivas que unem personalidade, clareza e movimento.</p>
+                    </article>
+                    <article class="skill-card reveal">
+                        <span class="card-number">03</span>
+                        <div class="skill-icon" aria-hidden="true">⌘</div>
+                        <h3>Git & GitHub</h3>
+                        <p>Versionamento, branches e colaboração com um fluxo de trabalho organizado.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+        <section class="journey section" id="jornada">
+            <div class="container journey-grid">
+                <div class="section-heading reveal">
+                    <p class="section-number">02 / Jornada</p>
+                    <h2>Do primeiro commit<br>à <em>próxima ideia.</em></h2>
+                </div>
+
+                <ol class="timeline">
+                    <li class="reveal">
+                        <span>01</span>
+                        <div><h3>Explorar</h3><p>Observar problemas e transformar curiosidade em possibilidades.</p></div>
+                    </li>
+                    <li class="reveal">
+                        <span>02</span>
+                        <div><h3>Construir</h3><p>Criar, testar e melhorar uma linha de código de cada vez.</p></div>
+                    </li>
+                    <li class="reveal">
+                        <span>03</span>
+                        <div><h3>Compartilhar</h3><p>Publicar o aprendizado e abrir espaço para a próxima evolução.</p></div>
+                    </li>
+                </ol>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-row">
+            <a class="brand" href="#inicio">My<span>Head</span><i>.</i></a>
+            <p>Feito com curiosidade e código.</p>
+            <p>© <span id="current-year">2026</span> Dutra</p>
+        </div>
+    </footer>
+
     <script src="js/main.js"></script>
-
-
 </body>
 
 </html>
